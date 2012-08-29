@@ -23,20 +23,24 @@
 	include("scripts/navigation.php");
 	include("scripts/functions.php");
 	include ('scripts/connect_db.php'); 
-	$sparkUrl = $_GET['sparkUrl'];
-	$result = mysql_query("SELECT * FROM makerspace WHERE sparkUrl='$sparkUrl'"); //selects the row(s) from the table and stores it in a resource. The id of the resource is stored in the variabl "result"
-	$row=mysql_fetch_array($result); //fetces the row which is stored in the resource
-	$id= $row['id'];
-	$name= unclean($row['name']);
-	$sparkUrl =$row['sparkUrl'];
-	$existingUrl= $row['existingUrl'];
-	$description= unclean($row['description']);
-	$address= unclean($row['adress']);
-	$country= $row['country'];
-	$fee= unclean($row['fee']);
-	$admins= $row['admins'];
-	$members= $row['members'];
-	$profileUrl= "\"".$row['id']."jpg\"";
+//	$sparkUrl = $_GET['sparkUrl'];
+	$sparkUrl = 'okspace';
+	$query = $conn->query("SELECT * FROM makerspace WHERE sparkUrl='$sparkUrl'"); //selects the row(s) from the table and stores it in a resource. The id of the resource is stored in the variabl "result"
+	
+	$row = $query->fetch_object(); //fetces the row which is stored in the resource
+	print_r($query);
+	$id= $row->id;
+	$name= unclean($row->name);
+	$sparkUrl =$row->sparkUrl;
+	$existingUrl= $row->existingUrl;
+	$description= unclean($row->description);
+	$address= unclean($row->address);
+	$country= $row->country;
+	$fee= unclean($row->fee);
+	$admins= $row->admins;
+	$members= $row->members;
+	
+	$profileUrl= "\"".$id."jpg\"";
 	?>
 	<div class="container">
 		<div class="row-fluid">
@@ -55,15 +59,14 @@
 							<div class="clearfix"></div><br><br>
 							<span class="span4" style="font-size:54px;">
 								<?php 
-								$members = $row['members'];
-								//echo $members.length;
+								//echo $members;
 								?>
 							</span>
 							<p style="margin: -20px auto auto 20px;" class="span6">people attending</p>
 							<div class="clearfix"></div><br>
 							<img src="./img/marker.png" style="height:30px; width:auto;" class="span4"/>
 							<p class="span8">
-								<?php echo $row['address'].', '.$row['country'];
+								<?php echo $address.', '.$country;
 								?>
 							</p>
 						</div>
@@ -95,17 +98,19 @@
 			<div class="span8 well rightbox">
 				<?php
 				$no_of_comments="10";
-				mysql_select_db($database);
 				$pagename=md5($_SERVER['PHP_SELF']);
-				$query=mysql_query("SELECT * FROM comments WHERE comment_on='$pagename' ORDER BY id DESC LIMIT 0, $no_of_comments");
+				$query = $conn->query("SELECT * FROM comments WHERE comment_on='$pagename' ORDER BY id DESC LIMIT 0, $no_of_comments");
 				echo "<br />";
  
 				echo "<h3>Comments</h3>";
+				
+				$fetch = $query->fetch_object();
 
-				while($fetch=mysql_fetch_array($query)) {
-					echo "<div class=\"comment\"><p><b>".$fetch['comment_by']."</b><br/>".$fetch['comment']."<p></div>";
+				while($fetch) {
+					echo "<div class=\"comment\"><p><b>".$fetch->comment_by."</b><br/>".$fetch->comment."<p></div>";
+					$fetch = $query->fetch_object();
 				}
-				mysql_close();
+				$conn->close();
 				?>
 				<form action="post_comment.php" method="post">
 					<table>

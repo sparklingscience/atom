@@ -24,7 +24,7 @@
     include("scripts/navigation.php"); 
     include ('scripts/connect_db.php');
     
-    $result = mysql_query("SELECT * FROM makerspace"); //selects the row(s) from the table and stores it in a resource. The id of the resource is stored in the variabl "result"
+    $query = $conn->query("SELECT * FROM makerspace"); //selects the row(s) from the table and stores it in a resource. The id of the resource is stored in the variabl "result"
     
     ?> 
 
@@ -46,21 +46,21 @@
                         <div class="span6">
                             <h2>Makerspaces</h2>
                             <?php
-                            while($row = mysql_fetch_array($result))
-  {
-  echo "<div class=\"well\">
-  <a href='./makerspace.php?sparkUrl=".$row['id']."'>
-  <br />";
-  echo $row['id'] . " " . $row['name'].
-  "<br />". 
-  $row['description'] ;
-  //echo "<img src=\"".$userPic."\" width=\"30\" height=\"30\"/>";
-  //echo "<img src=\"./images/userPics/1.jpg\" />";
-  echo "</a></div>";
-  echo "<br />";
-
-  }
-  ?>
+							$row = $query->fetch_object();
+                            while($row){
+							  echo "<div class=\"well\">
+							  <a href='./makerspace.php?sparkUrl=".$row->id."'>
+							  <br />";
+							  echo $row->id . " " . $row->name.
+							  "<br />". 
+							  $row->description;
+							  //echo "<img src=\"".$userPic."\" width=\"30\" height=\"30\"/>";
+							  //echo "<img src=\"./images/userPics/1.jpg\" />";
+							  echo "</a></div>";
+							  echo "<br />";
+							  $row = $query->fetch_object();
+							 }
+							?>
                         </div>
                         <div class="span6">
                             <h2>Make-a-thons</h2>

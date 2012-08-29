@@ -1,7 +1,7 @@
 <?php
 include("functions.php");
-include("connect_db.php");
-mysql_select_db($database);
+include_once("connect_db.php");
+
 $formData=$_POST['data'];
 //print_r($formData);
 $data = json_decode($formData);
@@ -19,9 +19,11 @@ $teams= $data->teams;
 $maxTeams= $data->maxTeams;
 
 //$query = "INSERT INTO `hackathon`.`makerspace` (`id`, `name`, `sparkUrl`, `existingUrl`, `description`, `address`, `country`, `fee`, `admins`, `members`) VALUES (NULL, \'hvjh\', \'mnbnm\', \'nbmn\', \'mnbmn\', \'nbn\', \'nv\', \'656\', \'hgfg\', \'hgfgh\');";
-$query="INSERT INTO makeathon (name,sparkUrl,existingUrl,description,address,country,fee,individuals,maxIndividuals,teams,maxTeams) VALUES ('$name','$sparkUrl','$existingUrl','$description','$address','$country',$fee,'$individuals','$maxIndividuals','$teams','$maxTeams');";
+$sql="INSERT INTO makeathon (name,sparkUrl,existingUrl,description,address,country,fee,individuals,maxIndividuals,teams,maxTeams) VALUES ('$name','$sparkUrl','$existingUrl','$description','$address','$country','$fee','$individuals','$maxIndividuals','$teams','$maxTeams');";
 
-$response=mysql_query($query) or die(mysql_error());
+$query = $conn->query($sql);
+$response= $conn->affected_rows;
+
 if($response){
 	echo "success";
 };
