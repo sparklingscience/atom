@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^([a-z]+)/?$ test.php?id=$1

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sparkling Science</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<?php include("scripts/navigation.php"); ?>
+<div id="welcomeBox" class="container"> <!-- welcomeBox container start -->
+    <div class="row"><br />
+    <div class="span12" id="centerRow">
+    	<div class="row-fluid" style="margin:35px auto;">
+        <div class="span12" style="text-align:center;">
+		    <h1 id="welcomeBoxTitle"><img src="img/atom.png" style="margin-right:15px;" />Sparkling Science!</h1><br />
+            <h2 style="text-align:center; color:#FFF;">Ever had a feeling you wanted to change the world<br />
+but didn't know how or where to start?</h2><br />
+            <div id="welcomeBoxDescription">
+            	<a href="#awesomeness"><button id="magicButton" class="btn btn-large btn-primary" style="padding:20px; font-size:22px;">Know how!</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>	<!-- welcomeBox container end -->
+<div id="introBox">
+Supporters of the DIY community.
+</div>
+
+<div id="awesomeness" class="container"><br />
+<br />
+<br />
+<br />
+<h1 id="welcomeText">Welcome to Sparkling Science!</h1>
+<br />
+	<div class="row">
+    	<div class="span12">
+        	<div class=" row-fluid">
+            	<div class="span4">
+                	<img src="img/dreamer.jpg" />
+                    <div class="steps">
+						<h2>Step 1: Dream</h2>
+                        <p>Dream, day and night, live it, feel it and give it a place to grow. For this is the only way by which it will transcend your mind and become real. We will help make your dreams come true!<br /><br />
+                        <button class="btn btn-primary btn-large">Dream on!</button>
+                        </p>
+                    </div>
+                </div>
+            	<div class="span4">
+                	<img src="img/engage.png" />
+                    <div class="steps">
+						<h2>Step 2: Engage</h2>
+                        <p>Expertise can never replace enthusiasm. See to what great places it can take you. “When you dream alone it’s only a dream but when you dream together it’s the beginning of a new reality.”<br /><br />
+						<button class="btn btn-large btn-warning">Hop in!</button>
+                        </p>
+                    </div>
+                </div>
+            	<div class="span4">
+                	<img src="img/maker.png" />
+                    <div class="steps">
+						<h2>Step 3: Make</h2>
+                        <p>Now you know the people and have seen the potential, you have an idea, you are there! Make it happen with your team! Use it smart, use it strong. You are just one step away from becoming the maker you always wanted to be!<br /><br />
+                        <a href="#juice"><button class="btn btn-primary btn-large">Show me the goods!<i class="icon-arrow-down icon-white"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+
+<div class="container" id="juice"><br />
+<br />
+<br />
+	<h2 style="text-align:center; margin:20px 0px; font-size:34px;">Be a part of the maker culture!</h2><br />
+<div class="row">
+    	<div class="span12">
+        	<div class=" row-fluid">
+            	<div class="span4">
+                	<img src="img/signup.png" />
+                    <div class="steps">
+						<h2>Be a maker</h2>
+                        <p>This is the very first step you can go through!<br />
+                        Sign up to become a part of a large community often mistaken to have descended 
+                        from a parallel universe. Highly creative, free and talented.<br /><br />
+                        </p>
+                    </div>
+                </div>
+            	<div class="span4">
+                	<img src="img/makerspace.png" />
+                    <div class="steps">
+						<h2>Create a makerspace!</h2>
+                        <p>Get things running! Contribute back to the community, make an impact by hosting a make-a-thon! Make like-minded people meet and have their ideas merge in a creative soup of boundless imagination.<br />
+                        <br />
+                        <hr />
+                        <a href="signup.php"><button class="btn btn-primary btn-large">Sign-up</button></a>
+                        </p>
+                    </div>
+                </div>
+            	<div class="span4">
+                	<img src="img/makeathon.png" />
+                    <div class="steps">
+						<h2>Host a make-a-thon!</h2>
+                        <p>Get things running!
+						Contribute back to the community, make an impact by hosting a make-a-thon!
+                        Make like-minded people meet and have their ideas merge to emerge out of thin air.
+                        This will surely take you to heaven ;)                        
+                        <br /><br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php include("scripts/footer.php");?>
+
+<!-- Placed at the bottom of the page to aid faster page loading!! -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+<script src="js/SmoothScroll.js"></script>
+</body>
+</html>

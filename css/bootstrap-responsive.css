@@ -57,6 +57,12 @@
   display: none !important;
 }
 
+#centerRow{
+	display:block;
+	margin:auto;
+	width:100%;
+}
+
 @media (max-width: 767px) {
   .visible-phone {
     display: inherit !important;
@@ -90,6 +96,7 @@
 @media (max-width: 480px) {
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
+
   }
   .page-header h1 small {
     display: block;
@@ -136,18 +143,42 @@
 }
 
 @media (max-width: 767px) {
+	
+  /* Switching off the padding for the page for phone layouts. */
   body {
-    padding-right: 20px;
+	 /*   
+ 	padding-right: 20px;
     padding-left: 20px;
+	*/
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
-    margin-right: -20px;
-    margin-left: -20px;
+
   }
+  
+  #welcomeBox{
+	  	padding: 0px !important;
+  }
+  
+  #welcomeText{
+		font-size:42px !important; 
+  }
+  
+  #welcomeBoxTitle{
+	  	font-size:54px !important;
+  }
+  
+  #centerRow > div > div > h2{
+	  font-size:18px !important;
+	  line-height:1em;
+  }
+  
   .container-fluid {
     padding: 0;
   }
+  
+  
+  
   .dl-horizontal dt {
     float: none;
     width: auto;
@@ -215,6 +246,8 @@
     float: left;
     margin-left: 20px;
   }
+  
+  
   .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
@@ -292,6 +325,9 @@
   .offset1 {
     margin-left: 82px;
   }
+  
+  
+  
   .row-fluid {
     width: 100%;
     *zoom: 1;
@@ -688,11 +724,16 @@
     position: static;
   }
   .navbar-fixed-top {
-    margin-bottom: 18px;
   }
   .navbar-fixed-bottom {
     margin-top: 18px;
   }
+  
+  #welcomeBox{
+	  margin:0 !important;
+  }
+  
+  
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
     padding: 5px;
@@ -702,8 +743,8 @@
     padding: 0;
   }
   .navbar .brand {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin: 0 0 0 -5px;
   }
   .nav-collapse {
