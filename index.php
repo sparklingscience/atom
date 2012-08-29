@@ -64,7 +64,7 @@ Supporters of the DIY community.
                     <div class="steps">
 						<h2>Step 2: Engage</h2>
                         <p>Expertise can never replace enthusiasm. See to what great places it can take you. “When you dream alone it’s only a dream but when you dream together it’s the beginning of a new reality.”<br /><br />
-						<button class="btn btn-large btn-warning">Hop in!</button>
+						<a href="engage.php"><button class="btn btn-large btn-primary">Hop in!</button></a>
                         </p>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ Supporters of the DIY community.
                     <div class="steps">
 						<h2>Step 3: Make</h2>
                         <p>Now you know the people and have seen the potential, you have an idea, you are there! Make it happen with your team! Use it smart, use it strong. You are just one step away from becoming the maker you always wanted to be!<br /><br />
-                        <a href="#juice"><button class="btn btn-primary btn-large">Show me the goods!<i class="icon-arrow-down icon-white"></i></button></a>
+                        <a href="#juice"><button class="btn btn-warning btn-large">Show me the goods!<i class="icon-arrow-right icon-white"></i></button></a>
                         </p>
                     </div>
                 </div>

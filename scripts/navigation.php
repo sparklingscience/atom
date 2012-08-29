@@ -19,6 +19,7 @@
             <div class="nav-collapse">
             	<ul class="nav">
                 	<li class="active"><a href="index.php">Home</a></li>
+                	<li><a href="definitions.php">Definitions</a></li>
                 	<li><a href="/makerspaces.php">Makerspaces</a></li>
                 	<li><a href="/makeathons.php">Make-a-thons</a></li>
                     <li><a href="http://www.sparklingscience.com/drive/" target="_blank">Blog</a></li>
