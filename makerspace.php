@@ -23,20 +23,25 @@
 	include("scripts/navigation.php");
 	include("scripts/functions.php");
 	include ('scripts/connect_db.php'); 
-//	$sparkUrl = $_GET['sparkUrl'];
-	$sparkUrl = 'okspace';
+	if(isset($_GET['sparkUrl'])){
+				   $sparkUrl = $_GET['sparkUrl'];
+				   }
+				   else{
+					   $sparkUrl = 'okspace';
+	}
+
 	$query = $conn->query("SELECT * FROM makerspace WHERE sparkUrl='$sparkUrl'"); //selects the row(s) from the table and stores it in a resource. The id of the resource is stored in the variabl "result"
 	
 	$row = $query->fetch_object(); //fetces the row which is stored in the resource
-	print_r($query);
+	//print_r($query);
 	$id= $row->id;
-	$name= unclean($row->name);
+	$name= $row->name;
 	$sparkUrl =$row->sparkUrl;
 	$existingUrl= $row->existingUrl;
-	$description= unclean($row->description);
-	$address= unclean($row->address);
+	$description= $row->description;
+	$address= $row->address;
 	$country= $row->country;
-	$fee= unclean($row->fee);
+	$fee= $row->fee;
 	$admins= $row->admins;
 	$members= $row->members;
 	

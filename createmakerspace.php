@@ -117,7 +117,10 @@ $(document).ready(function(){
 		        //alert(content);
 		        $.post("scripts/createmakerspacescript.php",{data:content},
 		        	function(data){
-		        		alert(data);
+						if(data!="error"){
+							document.location = "makerspace.php?sparkUrl="+data;
+						}
+		        		//alert(data);
 		        	}) ;
 		        
 		    });

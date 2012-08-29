@@ -55,7 +55,7 @@ Supporters of the DIY community.
                     <div class="steps">
 						<h2>Step 1: Dream</h2>
                         <p>Dream, day and night, live it, feel it and give it a place to grow. For this is the only way by which it will transcend your mind and become real. We will help make your dreams come true!<br /><br />
-                        <button class="btn btn-primary btn-large">Dream on!</button>
+                        <a href="http://www.sparklingscience.com/dream/"<button class="btn btn-primary btn-large">Dream on!</button></a>
                         </p>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ Supporters of the DIY community.
                     <div class="steps">
 						<h2>Step 3: Make</h2>
                         <p>Now you know the people and have seen the potential, you have an idea, you are there! Make it happen with your team! Use it smart, use it strong. You are just one step away from becoming the maker you always wanted to be!<br /><br />
-                        <a href="#juice"><button class="btn btn-warning btn-large">Show me the goods!<i class="icon-arrow-right icon-white"></i></button></a>
+                        <a href="make.php"><button class="btn btn-warning btn-large">Show me the goods!<i class="icon-arrow-right icon-white"></i></button></a>
                         </p>
                     </div>
                 </div>
@@ -81,52 +81,7 @@ Supporters of the DIY community.
         </div>
     </div>
 </div>
-<hr />
 
-<div class="container" id="juice"><br />
-<br />
-<br />
-	<h2 style="text-align:center; margin:20px 0px; font-size:34px;">Be a part of the maker culture!</h2><br />
-<div class="row">
-    	<div class="span12">
-        	<div class=" row-fluid">
-            	<div class="span4">
-                	<img src="img/signup.png" />
-                    <div class="steps">
-						<h2>Be a maker</h2>
-                        <p>This is the very first step you can go through!<br />
-                        Sign up to become a part of a large community often mistaken to have descended 
-                        from a parallel universe. Highly creative, free and talented.<br /><br />
-                        </p>
-                    </div>
-                </div>
-            	<div class="span4">
-                	<img src="img/makerspace.png" />
-                    <div class="steps">
-						<h2>Create a makerspace!</h2>
-                        <p>Get things running! Contribute back to the community, make an impact by hosting a make-a-thon! Make like-minded people meet and have their ideas merge in a creative soup of boundless imagination.<br />
-                        <br />
-                        <hr />
-                        <a href="signup.php"><button class="btn btn-primary btn-large">Sign-up</button></a>
-                        </p>
-                    </div>
-                </div>
-            	<div class="span4">
-                	<img src="img/makeathon.png" />
-                    <div class="steps">
-						<h2>Host a make-a-thon!</h2>
-                        <p>Get things running!
-						Contribute back to the community, make an impact by hosting a make-a-thon!
-                        Make like-minded people meet and have their ideas merge to emerge out of thin air.
-                        This will surely take you to heaven ;)                        
-                        <br /><br />
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <?php include("scripts/footer.php");?>
 
 <!-- Placed at the bottom of the page to aid faster page loading!! -->

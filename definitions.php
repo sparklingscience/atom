@@ -35,7 +35,7 @@ footer{
 
 <br />
 	<div class="row-fluid">
-    <img src="img/confused.png" style=" display:block; margin-left:auto; margin-right:0px;" />
+    <img src="img/confused.png" style=" display:block; margin:auto;" />
     	<div class="span12 well">
         <h2>Maker</h2>
         <p>Although makers can be anyone, more inveterate makers are part of the maker subculture, which includes engineering-oriented pursuits such as electronics, robotics, 3-D printing, and the use of CNC tools, as well as more traditional activities such as metalworking, woodworking, and traditional arts and crafts. Thanks to the increasing accesibility, openness and modularity of technology</p>

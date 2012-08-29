@@ -5,7 +5,7 @@ include("functions.php");
 $formData=$_POST['data'];
 $data = json_decode($formData);
 $name= clean($data->name); //won't work because we need to use mysqli_real_escape_string
-echo $name;
+//echo $name;
 $sparkUrl =$data->sparkUrl;
 $existingUrl= $data->existingUrl;
 $description= $data->description;
@@ -21,7 +21,7 @@ $query = $conn->query($sql);
 $response= $conn->affected_rows;
 
 if($response){
-	echo "success";
+	echo $sparkUrl;
 };
 $conn->close();
 ?>
