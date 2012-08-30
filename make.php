@@ -38,7 +38,7 @@ $(document).ready(function() {
 			}
 		});
 	
-	$(".draggable").draggable({cursorAt: {top: 58, left:0 }, helper: 'clone',
+	$(".draggable").draggable({cursorAt: {top: 58, left:-38 }, helper: 'clone',
 	stop: function(e) {
 		var point=new google.maps.Point(e.pageX-$("#map_canvas").offset().left,e.pageY-$("#map_canvas").offset().top);
 		console.log($("#map_canvas").offset().left+"..."+$("#map_canvas").offset().top);
@@ -181,7 +181,7 @@ function initialize() {
     <div class="span12" style="margin:0; width:100%;">
         <div class="row" style="padding:20px; margin:0;">
             <div class="span10 well">
-                <div id="map_canvas" style="height:300px;"></div>
+                <div id="map_canvas" style="height:300px; border:1px solid #ccc;"></div>
             </div>
             <div class="span2 well">
                 <div id="addHackathon">
