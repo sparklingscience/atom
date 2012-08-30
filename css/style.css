@@ -133,9 +133,12 @@ background-color: whiteSmoke;
 }
 
 .steps{
-	text-align:center;
 	margin-top:20px;
 	background:#FFF;
+}
+
+.steps > h2{
+	text-align:center;
 }
 
 h2{

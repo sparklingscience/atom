@@ -30,7 +30,7 @@
             <h2 style="text-align:center; color:#FFF;">Ever had a feeling you wanted to change the world<br />
 but didn't know how or where to start?</h2><br />
             <div id="welcomeBoxDescription">
-            	<a href="#awesomeness"><button id="magicButton" class="btn btn-large btn-primary" style="padding:20px; font-size:22px;">Know how!</button></a>
+            	<a href="#awesomeness"><button id="magicButton" class="btn btn-large btn-primary" style="padding:20px; font-size:22px;">Learn how!</button></a>
             </div>
         </div>
         </div>
@@ -81,6 +81,29 @@ Supporters of the DIY community.
         </div>
     </div>
 </div>
+
+<hr />
+
+<div id="feedback" class="container">
+	<div class="row-fluid">
+    	<div class="span8">
+    
+        <!-- BEGIN Podio web form -->
+        <script src="http://podio.com/webforms/1996709/136209.js"></script>
+        <script type="text/javascript">
+        _podioWebForm.render("136209")
+        </script>
+        <div class="podio-webform-container">
+        Podio provides <a href="https://company.podio.com/project-management-software" class="podio-webform-inner">project management software</a> you can build yourself.
+        </div>
+        <!-- END Podio web form -->
+        
+        </div>
+     </div>
+</div>
+
+
+
 
 <?php include("scripts/footer.php");?>
 

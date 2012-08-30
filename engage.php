@@ -32,7 +32,9 @@ footer{
     <img src="img/engagePage.png" style=" display:block; margin:auto;" />
     	<div class="span12 well">
         <h2 style="text-align:center;">Sorry! we are currently unable to connect to the paralell universe.
-Share your dreams and we will find your alike once the community has descended to earth.</h2>
+Share your dreams and we will find your alike once the community has descended to earth.<br /><br />
+<a href="make.php"><button class="btn btn-primary btn-large">Visit the makerpage</button></a>
+</h2>
 		</div>
 	</div>
 </div>
